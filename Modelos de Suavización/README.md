@@ -74,3 +74,15 @@ donde:
 * Tt: es la estimación de la tendencia de la serie para el período t.
 
 En resumen, el modelo de suavización exponencial doble es un método útil para pronosticar valores futuros en función de los datos históricos de una serie temporal que exhibe un patrón de tendencia y estacionalidad. Al igual que con el modelo de suavización exponencial simple, la elección de los valores de los factores de suavización es crítica para obtener pronósticos precisos. Además, este modelo puede requerir ajustes adicionales para considerar otras fuentes de variabilidad en la serie temporal.
+
+## La suavización exponencial triple Holt-Winter
+
+La suavización exponencial triple Holt-Winter es un método de pronóstico utilizado para predecir valores futuros de una serie de tiempo, basado en sus valores históricos. Es una extensión del método de suavización exponencial simple y doble, que utiliza tres parámetros para modelar las tendencias, los patrones estacionales y los efectos de la variabilidad aleatoria.
+
+El método de suavización exponencial triple Holt-Winter utiliza tres ecuaciones para modelar los tres componentes de una serie de tiempo: el nivel, la tendencia y la estacionalidad. El nivel representa el valor medio de la serie, la tendencia representa la dirección y la tasa de cambio de la serie, y la estacionalidad representa los patrones recurrentes que se observan en la serie en un período de tiempo fijo, como un mes o un año.
+
+El modelo de suavización exponencial triple Holt-Winter utiliza tres parámetros, alpha, beta y gamma, que controlan la suavidad de cada componente de la serie. Alpha controla la suavidad del nivel, beta controla la suavidad de la tendencia y gamma controla la suavidad de la estacionalidad.
+
+Una vez que se han estimado los parámetros, se puede utilizar el modelo para predecir valores futuros de la serie de tiempo. La precisión de la predicción dependerá de la calidad de los datos históricos y de la elección adecuada de los parámetros.
+
+En resumen, la suavización exponencial triple Holt-Winter es un método de pronóstico utilizado para predecir valores futuros de una serie de tiempo, que utiliza tres parámetros para modelar los componentes de la serie: el nivel, la tendencia y la estacionalidad.
