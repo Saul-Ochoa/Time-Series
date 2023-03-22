@@ -47,29 +47,30 @@ St = αYt + (1-α)(St-1 + Tt-1)
 
 donde:
 
-St: es la estimación del nivel de la serie para el período t.
-α: es el factor de suavización del nivel que toma valores entre 0 y 1 y determina el peso que se le da a los valores históricos en la predicción.
-Yt: es el valor de la serie temporal para el período t.
-St-1: es la estimación del nivel de la serie para el período anterior (t-1).
-Tt-1: es la estimación de la tendencia de la serie para el período anterior (t-1).
+* St: es la estimación del nivel de la serie para el período t.
+* α: es el factor de suavización del nivel que toma valores entre 0 y 1 y determina el peso que se le da a los valores históricos en la predicción.
+* Yt: es el valor de la serie temporal para el período t.
+* St-1: es la estimación del nivel de la serie para el período anterior (t-1).
+* Tt-1: es la estimación de la tendencia de la serie para el período anterior (t-1).
 La fórmula para estimar la tendencia se calcula a partir de:
 
 Tt = β*(St - St-1) + (1-β)*Tt-1
 
 donde:
 
-Tt: es la estimación de la tendencia de la serie para el período t.
-β: es el factor de suavización de la tendencia que toma valores entre 0 y 1 y determina el peso que se le da a los valores históricos en la predicción.
-St: es la estimación del nivel de la serie para el período t.
-St-1: es la estimación del nivel de la serie para el período anterior (t-1).
-Tt-1: es la estimación de la tendencia de la serie para el período anterior (t-1).
+* Tt: es la estimación de la tendencia de la serie para el período t.
+* β: es el factor de suavización de la tendencia que toma valores entre 0 y 1 y determina el peso que se le da a los valores históricos en la predicción.
+* St: es la estimación del nivel de la serie para el período t.
+* St-1: es la estimación del nivel de la serie para el período anterior (t-1).
+* Tt-1: es la estimación de la tendencia de la serie para el período anterior (t-1).
 La predicción para el próximo período se calcula a partir de:
 
 Yt+h = St + h*Tt
 
 donde:
 
-Yt+h: es la predicción para el período t+h, donde h es el número de períodos hacia el futuro.
-St: es la estimación del nivel de la serie para el período t.
-Tt: es la estimación de la tendencia de la serie para el período t.
+* Yt+h: es la predicción para el período t+h, donde h es el número de períodos hacia el futuro.
+* St: es la estimación del nivel de la serie para el período t.
+* Tt: es la estimación de la tendencia de la serie para el período t.
+
 En resumen, el modelo de suavización exponencial doble es un método útil para pronosticar valores futuros en función de los datos históricos de una serie temporal que exhibe un patrón de tendencia y estacionalidad. Al igual que con el modelo de suavización exponencial simple, la elección de los valores de los factores de suavización es crítica para obtener pronósticos precisos. Además, este modelo puede requerir ajustes adicionales para considerar otras fuentes de variabilidad en la serie temporal.
